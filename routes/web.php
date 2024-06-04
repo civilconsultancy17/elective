@@ -10,4 +10,4 @@ Route::get('/admin/dashboard', function () {
 Route::get('/', function () {
     return view('front.index');
 });
-//testing
+//im bhuma
