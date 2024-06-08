@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MembersController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -10,4 +11,6 @@ Route::get('/admin/dashboard', function () {
 Route::get('/', function () {
     return view('front.index');
 });
-// final changes by pooja
+
+Route::get('/show', [MembersController::class, 'show'])->name('show-lists');
+
